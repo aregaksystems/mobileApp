@@ -1,0 +1,109 @@
+﻿@model SouthTech_Test.Models.Contact
+<div id="loader" class="loader" style="display:none">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+        <br />
+        <br />
+        <div style="align-content: center"><span>Processing..</span></div>
+    </div>
+
+</div>
+<div id="success" class="alert alert-success" style="display:none">
+<strong>Success!</strong> created successfully.
+</div>
+<div id="failed" class="alert alert-danger" style="display:none">
+    <strong>Fauild!</strong> operation did not end successfully .
+</div>
+@using (Ajax.BeginForm("AddContact", "Contact", new AjaxOptions { InsertionMode = InsertionMode.Replace, HttpMethod = "POST", Confirm = "to complete the operation press ok?", LoadingElementId = "loader", OnBegin = "start", OnSuccess = "success", OnFailure = "fail" }, new {id= "surveyForm", @class = "form-horizontal", role = "form" }))
+{
+ @Html.AntiForgeryToken();
+    <div class="form-group">
+        <label class="col-xs-3 control-label"><i class="glyphicon glyphicon-user"></i></label>
+        <div class="col-xs-5">
+           
+            <input id="fld_Contact_Name" type="text" class="form-control" name="Name"  placeholder="Contact Full Name"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label"><i class="glyphicon glyphicon-phone"></i></label>
+        <div class="col-xs-5">
+            <input type="text" class="form-control" name="option" placeholder="Phone Number" />
+        </div>
+        <div class="col-xs-4">
+            <button class="btn btn-default addButton" type="button">
+                <i class="glyphicon glyphicon-plus-sign"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="form-group hide" id="optionTemplate">
+        <label class="col-xs-3 control-label"><i class="glyphicon glyphicon-phone"></i></label>
+        <div class="col-xs-offset-3 col-xs-5">
+            <input class="form-control" type="text" name="option" placeholder="Phone Number" />
+        </div>
+        <div class="col-xs-4">
+            <button class="btn btn-default removeButton" type="button">
+                <i class="glyphicon glyphicon-minus-sign"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-5 col-xs-offset-3">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+   
+    function submit() {
+        $('form').submit(function (e) {
+            e.preventDefault();
+            if ($(this).valid()) {
+                var parameters = [];
+                $('input[type=text]').each(function () {
+                    if ($(this).attr('name') == 'option' && !$(this).parent().parent().hasClass('hide')) {
+
+                        parameters.push({
+                            fld_Phone_Number: $(this).val(),
+                        });
+                    }
+
+                });
+                var jphone = JSON.stringify(parameters)
+                var dat = { fld_Contact_Name: $("#fld_Contact_Name").val(), PhonesList: jphone }
+                alert(this.action);
+                alert(this.method);
+                $.ajax({
+                    url: this.action,
+                    type: this.method,
+                    data: JSON.stringify(dat),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (result) {
+                        $('#myModal').modal('hide');
+                        $('input[type=text]').val('');
+                    },
+                    error: function (request) {
+                        return false;
+                    }
+                });
+            }
+            return false;
+        });
+    }
+    function start() {
+
+        //  $(".loader").css("display", "block");
+    }
+    function success() {
+        $("#success").css("display", "block");
+        // $(".loader").css("display", "none");
+    }
+    function fail() {
+        $("#failed").css("display", "block");
+        //   $(".loader").css("display", "none");
+    }
+</script>

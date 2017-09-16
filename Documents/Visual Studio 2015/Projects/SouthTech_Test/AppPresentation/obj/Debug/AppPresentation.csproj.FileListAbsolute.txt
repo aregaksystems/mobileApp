@@ -1,0 +1,17 @@
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\AppPresentation.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\AppPresentation.pdb
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\AppLogger.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\AppRepository.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\SouthTech_DAL.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\log4net.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\EntityFramework.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\AppLogger.pdb
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\AppRepository.pdb
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\SouthTech_DAL.pdb
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\log4net.xml
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\bin\Debug\EntityFramework.xml
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\obj\Debug\AppPresentation.csprojResolveAssemblyReference.cache
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\obj\Debug\AppPresentation.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\AppPresentation\obj\Debug\AppPresentation.pdb

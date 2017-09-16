@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SouthTechModelStoreContainer" CdmEntityContainer="SouthTechEntities">
+    <EntitySetMapping Name="Tbl_Contact">
+      <EntityTypeMapping TypeName="SouthTechModel.Tbl_Contact">
+        <MappingFragment StoreEntitySet="Tbl_Contact">
+          <ScalarProperty Name="fld_Contact_ID" ColumnName="fld_Contact_ID" />
+          <ScalarProperty Name="fld_Contact_Name" ColumnName="fld_Contact_Name" />
+          <ScalarProperty Name="fld_Group_ID" ColumnName="fld_Group_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Group">
+      <EntityTypeMapping TypeName="SouthTechModel.Tbl_Group">
+        <MappingFragment StoreEntitySet="Tbl_Group">
+          <ScalarProperty Name="fld_Group_ID" ColumnName="fld_Group_ID" />
+          <ScalarProperty Name="fld_Group_Title" ColumnName="fld_Group_Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_PhoneContact">
+      <EntityTypeMapping TypeName="SouthTechModel.Tbl_PhoneContact">
+        <MappingFragment StoreEntitySet="Tbl_PhoneContact">
+          <ScalarProperty Name="fld_Phone_ID" ColumnName="fld_Phone_ID" />
+          <ScalarProperty Name="fld_Phone_Number" ColumnName="fld_Phone_Number" />
+          <ScalarProperty Name="fld_Contact_ID" ColumnName="fld_Contact_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_SystemErrorLog">
+      <EntityTypeMapping TypeName="SouthTechModel.Tbl_SystemErrorLog">
+        <MappingFragment StoreEntitySet="Tbl_SystemErrorLog">
+          <ScalarProperty Name="fld_ErrorLog_ID" ColumnName="fld_ErrorLog_ID" />
+          <ScalarProperty Name="fld_ErrorLog_Text" ColumnName="fld_ErrorLog_Text" />
+          <ScalarProperty Name="fld_ErrorLog_IPAddress" ColumnName="fld_ErrorLog_IPAddress" />
+          <ScalarProperty Name="fld_ErrorLog_Date" ColumnName="fld_ErrorLog_Date" />
+          <ScalarProperty Name="fld_ErrorLog_Time" ColumnName="fld_ErrorLog_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_contactTransactions" FunctionName="SouthTechModel.Store.sp_contactTransactions" />
+  </EntityContainerMapping>
+</Mapping>

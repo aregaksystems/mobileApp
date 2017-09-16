@@ -1,0 +1,9 @@
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\SouthTech_DAL.dll.config
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\SouthTech_DAL.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\SouthTech_DAL.pdb
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\EntityFramework.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\EntityFramework.xml
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\obj\Debug\SouthTech_DAL.dll
+C:\Users\anasa\Documents\Visual Studio 2015\Projects\SouthTech_Test\SouthTech_DAL\obj\Debug\SouthTech_DAL.pdb

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b71cf470-7aec-4a26-a984-2cfc8d3d5ec4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52658/SouthTechInteg.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SouthTechInteg.xsd" MetadataType="Schema" ID="211c9249-1337-446d-922d-c8513016fc93" SourceId="1" SourceUrl="http://localhost:52658/SouthTechInteg.svc?xsd=xsd1" />
+    <MetadataFile FileName="SouthTechInteg1.xsd" MetadataType="Schema" ID="82c8cdb5-b20b-4232-a884-9ef3d0a4d17a" SourceId="1" SourceUrl="http://localhost:52658/SouthTechInteg.svc?xsd=xsd0" />
+    <MetadataFile FileName="SouthTechInteg2.xsd" MetadataType="Schema" ID="ea659325-c873-40b1-82b8-25f0bfe7e06b" SourceId="1" SourceUrl="http://localhost:52658/SouthTechInteg.svc?xsd=xsd3" />
+    <MetadataFile FileName="SouthTechInteg3.xsd" MetadataType="Schema" ID="2889b9df-71f3-4a22-b08e-d24bfa7d5b4c" SourceId="1" SourceUrl="http://localhost:52658/SouthTechInteg.svc?xsd=xsd2" />
+    <MetadataFile FileName="SouthTech.wsdl" MetadataType="Wsdl" ID="1e3fa89d-0b90-42f0-840e-ba788e01ff00" SourceId="1" SourceUrl="http://localhost:52658/SouthTechInteg.svc?wsdl" />
+    <MetadataFile FileName="SouthTechInteg.disco" MetadataType="Disco" ID="ea5faa01-9e54-4332-87b9-6b734edd75ef" SourceId="1" SourceUrl="http://localhost:52658/SouthTechInteg.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

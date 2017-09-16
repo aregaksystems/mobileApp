@@ -1,0 +1,8 @@
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\bin\Debug\AppLogger.dll.config
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\bin\Debug\AppLogger.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\bin\Debug\AppLogger.pdb
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\bin\Debug\log4net.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\bin\Debug\log4net.xml
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\obj\Debug\AppLogger.csprojResolveAssemblyReference.cache
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\obj\Debug\AppLogger.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppLogger\obj\Debug\AppLogger.pdb

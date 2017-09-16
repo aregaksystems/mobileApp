@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SouthTechModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_Contact">
+    <Key>
+      <PropertyRef Name="fld_Contact_ID" />
+    </Key>
+    <Property Name="fld_Contact_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fld_Contact_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="fld_Group_ID" Type="Int32" />
+    <NavigationProperty Name="Tbl_Group" Relationship="Self.FK_Tbl_Contact_Tbl_Group" FromRole="Tbl_Contact" ToRole="Tbl_Group" />
+    <NavigationProperty Name="Tbl_PhoneContact" Relationship="Self.FK_Tbl_PhoneContact_Tbl_Contact" FromRole="Tbl_Contact" ToRole="Tbl_PhoneContact" />
+  </EntityType>
+  <EntityType Name="Tbl_Group">
+    <Key>
+      <PropertyRef Name="fld_Group_ID" />
+    </Key>
+    <Property Name="fld_Group_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fld_Group_Title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tbl_Contact" Relationship="Self.FK_Tbl_Contact_Tbl_Group" FromRole="Tbl_Group" ToRole="Tbl_Contact" />
+  </EntityType>
+  <EntityType Name="Tbl_PhoneContact">
+    <Key>
+      <PropertyRef Name="fld_Phone_ID" />
+    </Key>
+    <Property Name="fld_Phone_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fld_Phone_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fld_Contact_ID" Type="Int32" />
+    <NavigationProperty Name="Tbl_Contact" Relationship="Self.FK_Tbl_PhoneContact_Tbl_Contact" FromRole="Tbl_PhoneContact" ToRole="Tbl_Contact" />
+  </EntityType>
+  <EntityType Name="Tbl_SystemErrorLog">
+    <Key>
+      <PropertyRef Name="fld_ErrorLog_ID" />
+    </Key>
+    <Property Name="fld_ErrorLog_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fld_ErrorLog_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="fld_ErrorLog_IPAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fld_ErrorLog_Date" Type="DateTime" Precision="0" />
+    <Property Name="fld_ErrorLog_Time" Type="Time" Precision="7" />
+  </EntityType>
+  <Association Name="FK_Tbl_Contact_Tbl_Group">
+    <End Role="Tbl_Group" Type="Self.Tbl_Group" Multiplicity="0..1" />
+    <End Role="Tbl_Contact" Type="Self.Tbl_Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Group">
+        <PropertyRef Name="fld_Group_ID" />
+      </Principal>
+      <Dependent Role="Tbl_Contact">
+        <PropertyRef Name="fld_Group_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_PhoneContact_Tbl_Contact">
+    <End Role="Tbl_Contact" Type="Self.Tbl_Contact" Multiplicity="0..1" />
+    <End Role="Tbl_PhoneContact" Type="Self.Tbl_PhoneContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Contact">
+        <PropertyRef Name="fld_Contact_ID" />
+      </Principal>
+      <Dependent Role="Tbl_PhoneContact">
+        <PropertyRef Name="fld_Contact_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SouthTechEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_Contact" EntityType="Self.Tbl_Contact" />
+    <EntitySet Name="Tbl_Group" EntityType="Self.Tbl_Group" />
+    <EntitySet Name="Tbl_PhoneContact" EntityType="Self.Tbl_PhoneContact" />
+    <EntitySet Name="Tbl_SystemErrorLog" EntityType="Self.Tbl_SystemErrorLog" />
+    <AssociationSet Name="FK_Tbl_Contact_Tbl_Group" Association="Self.FK_Tbl_Contact_Tbl_Group">
+      <End Role="Tbl_Group" EntitySet="Tbl_Group" />
+      <End Role="Tbl_Contact" EntitySet="Tbl_Contact" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_PhoneContact_Tbl_Contact" Association="Self.FK_Tbl_PhoneContact_Tbl_Contact">
+      <End Role="Tbl_Contact" EntitySet="Tbl_Contact" />
+      <End Role="Tbl_PhoneContact" EntitySet="Tbl_PhoneContact" />
+    </AssociationSet>
+    <FunctionImport Name="sp_contactTransactions">
+      <Parameter Name="fld_Contact_Name" Mode="In" Type="String" />
+      <Parameter Name="fld_Group_ID" Mode="In" Type="Int32" />
+      <Parameter Name="fld_Contact_ID" Mode="In" Type="Int32" />
+      <Parameter Name="xmlPhone" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

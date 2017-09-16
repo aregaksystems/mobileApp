@@ -1,0 +1,16 @@
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\AppRepository.dll.config
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\AppRepository.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\AppRepository.pdb
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\AppLogger.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\EntityFramework.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\RumorsDAL.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\log4net.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\AppLogger.pdb
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\RumorsDAL.pdb
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\EntityFramework.xml
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\bin\Debug\log4net.xml
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\obj\Debug\AppRepository.csprojResolveAssemblyReference.cache
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\obj\Debug\AppRepository.dll
+c:\users\anasa\documents\visual studio 2015\Projects\RumorsTestApp_Anas\AppRepository\obj\Debug\AppRepository.pdb

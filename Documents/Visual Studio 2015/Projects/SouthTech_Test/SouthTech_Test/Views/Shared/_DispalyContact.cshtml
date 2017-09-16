@@ -1,0 +1,31 @@
+﻿@model SouthTech_Test.SouthTechService.Contact
+<div class="row">
+    <div class="col-md-8">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+             <input id="fld_Contact_Name" type="text" class="form-control" name="Name" placeholder="Contact Full Name" value="@Model.fld_Contact_Name" />
+            
+        </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-8"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <ul class="list-group">
+                    @foreach (var item in Model.PhonesList)
+                    {
+                        <li class="list-group-item clearfix">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            @Html.DisplayFor(modelItem => item.fld_Phone_Number)
+
+                        </li>
+                    }
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
